@@ -1,0 +1,37 @@
+<?php 
+
+	$servername = "localhost";
+	$username = "curso_dora";
+	$password = "ara2817";
+	$dbname = "curso_dora_care";
+
+
+	try {
+	  $pdo = new PDO('mysql:host=$servername;dbname=$dbname', $username, $password);
+	  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	   
+	  $stmt = $pdo->prepare('INSERT INTO insc_dora (nome, email, telefone, mensagem)VALUES(:nome, :email, :telefone, :mensagem)');
+
+	  $stmt->bindParam(':name', $name);
+	  $stmt->bindParam(':email', $name);
+	  $stmt->bindParam(':telefone', $name);
+	  $stmt->bindParam(':mensagem', $name);
+
+	  $nome = "Gustavo Sales";
+	  $email = "gustavo@yoagencia.digital";
+	  $telefone = "11 985-595-639";
+	  $mensagem = "Olá, meu nome é Gustavo Sales de Melo Miranda e eu adoraria participar do curso de idosos doracare.";
+	  //Enviar os dados agora escritos
+
+	  echo $stmt->rowCount(); 
+	  echo ' P´ROAPIJDSA<br/>'
+	  $stmt->execute();
+	   
+	  echo $stmt->rowCount(); 
+
+	}catch(PDOException $e) {
+	  echo 'Error: ' . $e->getMessage();
+	}
+	  
+
+?>

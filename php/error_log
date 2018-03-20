@@ -1,0 +1,4 @@
+[23-Jan-2018 13:06:33 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ',' or ';' in /home/yoagencia/public_html/cliente/dora_care/php/db_connect.php on line 28
+[23-Jan-2018 13:08:42 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ',' or ';' in /home/yoagencia/public_html/cliente/dora_care/php/db_connect.php on line 29
+[23-Jan-2018 13:08:43 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ',' or ';' in /home/yoagencia/public_html/cliente/dora_care/php/db_connect.php on line 29
+[23-Jan-2018 13:10:03 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ',' or ';' in /home/yoagencia/public_html/cliente/dora_care/php/db_connect.php on line 29
